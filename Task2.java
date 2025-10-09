@@ -8,6 +8,8 @@ public class Task2 {
 
         if (number % 2 == 0) {
             System.out.println("Odd Number");
+            System.out.print("input");
+            int numberOdd = sc.nextInt();  
         } else {
             System.out.println("Even Number");
         }
