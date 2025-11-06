@@ -3,8 +3,8 @@ public class firstTask {
     public static void main(String[] args) {
         Scanner isc = new Scanner(System.in);
         
-        int ticketsSold, totalTicketSales;
-        double ticket, ticketPrice = 50000, totalPrice;
+        int totalTicketsSold=0, totalTicketSales=0, sold=0, totalRevenue=0, ticketStatus;
+        double ticket=0, ticketPrice = 50000, totalPrice=0;
         String customerName;
         
         do { 
@@ -25,14 +25,11 @@ public class firstTask {
             }
 
             if (ticket > 4) {
-                totalPrice = (ticket * ticketPrice) * 0.1;
+                totalPrice = (ticket * ticketPrice) * 0.10;
                 System.out.println("Total to be paid  : Rp " + totalPrice);
                 isc.nextLine();
             } else if (ticket > 10) {
-                totalPrice = (ticket * ticketPrice) * 1.5;
-                System.out.println("Total to be paid  : Rp " + totalPrice);
-                isc.nextLine();
-                totalPrice = (ticket * ticketPrice);
+                totalPrice = (ticket * ticketPrice) * 0.15;
                 System.out.println("Total to be paid  : Rp " + totalPrice);
                 isc.nextLine();
             } else {
@@ -41,10 +38,19 @@ public class firstTask {
                 isc.nextLine();
             }
 
+           
+
+           
+
             
 
         } while (true);
-        System.out.println("The Purchase has been Completed.");
+        totalTicketsSold += ticket;
+        totalTicketSales += totalPrice;
+        
+        System.out.println("All Purchase has been Completed.");
+        System.out.println("Total of Ticket Sold : " + totalTicketsSold);
+        System.out.println("Total of Ticket Sales : " + totalPrice);
         
         isc.close();
         } 
