@@ -13,7 +13,7 @@ public class square {
             for (i = 1; i <= n; i++) {
             System.out.print("*");
             }
-            System.out.println("");
+            
         }
 
         isc.close();
