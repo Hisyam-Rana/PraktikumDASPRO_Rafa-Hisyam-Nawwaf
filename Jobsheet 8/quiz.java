@@ -32,7 +32,7 @@ public class quiz {
             } else if (guess < answer) {
                 System.out.println("Too small.");
             } else {
-                System.out.println("Too big.");
+                System.out.println("Too big. ");
             }
         }
         input.close();
