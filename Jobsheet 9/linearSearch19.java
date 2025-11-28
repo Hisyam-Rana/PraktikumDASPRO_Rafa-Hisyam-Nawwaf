@@ -10,7 +10,8 @@ public class linearSearch19 {
                 result = i;
                 break;
             }
+        
         }
-        System.out.println("The key in the array is located at index position " + result);
+        System.out.println("The Key in the array is located at index position : " + result);
 }    
 }
