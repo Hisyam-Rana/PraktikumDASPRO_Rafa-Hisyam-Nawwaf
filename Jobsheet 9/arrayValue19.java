@@ -10,9 +10,13 @@ public class arrayValue19 {
             finalScore[i] = isc.nextInt();
         }
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Final Score " +i+ " is " + finalScore[i]);
+        for (int i = 0; i < finalScore.length; i++) {
+            if (finalScore[i] > 70) {
+            System.out.println("Student " +i+ " Passed ! ");
+            } else {
+            System.out.println("Student " +i+ " Failed ! ");    
+            }
+        isc.close();
         }
-        
     }
 }
