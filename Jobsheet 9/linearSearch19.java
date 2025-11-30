@@ -21,10 +21,13 @@ public class linearSearch19 {
         for (int i = 0; i < elemntsArray.length; i++) {
             if (elemntsArray[i] == key) {
                 result = i;
+                System.out.println("The Key in the array is located at index position : " + result);
                 break;
+            } else {
+                System.out.println("The Key is not found.");
             }
         
         }
-        System.out.println("The Key in the array is located at index position : " + result);
+        
 }    
 }
