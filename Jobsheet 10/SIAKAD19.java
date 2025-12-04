@@ -3,7 +3,13 @@ public class SIAKAD19 {
     public static void main(String[] args) {
         Scanner isc = new Scanner(System.in);
 
-        int[][] score = new int[4][3];
+        System.out.print("Enter the number of Sudents : ");
+        int students = isc.nextInt();
+
+        System.out.print("Enter the number of Courses : ");
+        int courses = isc.nextInt();
+
+        int[][] score = new int[students][courses];
 
         for (int i = 0; i < score.length; i++) {
             System.out.println("Enter scores for student #" + (i+1));
