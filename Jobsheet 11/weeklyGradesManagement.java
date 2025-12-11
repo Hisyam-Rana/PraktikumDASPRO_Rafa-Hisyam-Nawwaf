@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class weeklyGradesManagement {
 
 static Scanner isc = new Scanner(System.in);
-static int students = 5;
-static int weeks = 7 ; 
-static int[][] grades = new int[students][weeks]; 
-static String[] studentNames = {"Sari", "Rina", "Yani", "Dwi", "Lusi"};
+static int students;
+static int weeks; 
+static int[][] grades; 
+static String[] studentNames;
 
     public static void main(String[] args) {
         
@@ -16,33 +16,38 @@ static String[] studentNames = {"Sari", "Rina", "Yani", "Dwi", "Lusi"};
             System.out.println("\n===========================================");
             System.out.println("     WEEKLY GRADE MANAGEMENT SYSTEM       ");
             System.out.println("===========================================");
-            System.out.println("1. Input/Update Student Grade");
-            System.out.println("2. Display All Grade");
-            System.out.println("3. Search Week by the Highest Grade");
-            System.out.println("4. Search Student by the Highest Grade");
+            System.out.println("1. Input Total Student and Week");
+            System.out.println("2. Input/Update Student Grade");
+            System.out.println("3. Display All Grade");
+            System.out.println("4. Search Week by the Highest Grade");
+            System.out.println("5. Search Student by the Highest Grade");
             System.out.println("0. Exit");
             System.out.print("Your Choice : ");
             choice = isc.nextInt();
 
-            if (choice < 0 || choice > 4) {
+            if (choice < 0 || choice > 5) {
                 System.out.println("Invalid Choice. Enter Number from 0-4.");
                 continue;
             }
 
             switch (choice) {
                 case 1:
-                    inputStudentsGradeData();
+                    inputStudentWeek();
                     break;
                 
                 case 2:
-                    displayAllStudentGrades();
+                    inputStudentsGradeData();
                     break;
                 
                 case 3:
-                    findHighestGradeWeek();
+                    displayAllStudentGrades();
                     break;
                 
                 case 4:
+                    findHighestGradeWeek();
+                    break;
+                
+                case 5:
                     findHighestGradeStudent();
                     break;
                 
@@ -56,6 +61,25 @@ static String[] studentNames = {"Sari", "Rina", "Yani", "Dwi", "Lusi"};
             }
         } while (choice != 0);
     }    
+
+    public static void inputStudentWeek() {
+        
+        System.out.println("\n=== TOTAL STUDENT & WEEK INPUT ===");
+        System.out.print("Input Total Student : ");
+        students = isc.nextInt();
+        System.out.print("Input Total Week : ");
+        weeks = isc.nextInt();
+        isc.nextLine();
+
+        grades = new int[students][weeks];
+        studentNames = new String[students];
+        
+        for (int i = 0; i < students; i++) {
+            System.out.print("Input Student " +(i+1)+ " Name : ");
+            studentNames[i] = isc.nextLine();
+        }
+
+    }
 
     public static void inputStudentsGradeData () {
         
