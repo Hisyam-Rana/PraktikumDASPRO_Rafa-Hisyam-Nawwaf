@@ -26,7 +26,7 @@ public class Task3 {
             default:
                 System.out.println("✗ Access denied - invalid user type");
         }
-
+        sc.close();
     }
     
 }

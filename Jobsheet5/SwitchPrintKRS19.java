@@ -56,6 +56,7 @@ public class SwitchPrintKRS19 {
             } else {
                 System.out.println("Invalid Semester");
             }
+            sc.close();
     }
     
 }

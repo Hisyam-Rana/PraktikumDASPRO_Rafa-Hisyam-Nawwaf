@@ -13,5 +13,7 @@ public class assignment2 {
         }
 
         System.out.println();
+    sc.close();
     }
+    
 }

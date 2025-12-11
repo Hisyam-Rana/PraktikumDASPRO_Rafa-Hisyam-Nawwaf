@@ -23,5 +23,6 @@ public class IfPrintKRS19 {
                 ? "UKT Payment has been verified\nKRS now can be printed and you can ask the academic advisor to sign it"
                 : "UKT Payment has not been verified";
         System.out.println(message);
+        sc.close();
     }
 }

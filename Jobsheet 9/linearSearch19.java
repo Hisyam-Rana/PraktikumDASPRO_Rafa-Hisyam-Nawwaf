@@ -28,6 +28,6 @@ public class linearSearch19 {
             }
         
         }
-        
+        isc.close();
 }    
 }

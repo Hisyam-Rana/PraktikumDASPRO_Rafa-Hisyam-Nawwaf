@@ -14,6 +14,7 @@ public class Task2 {
         } else {
             System.out.println("Even Number");
         }
+    sc.close();
     }
     
 }

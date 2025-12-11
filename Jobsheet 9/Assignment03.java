@@ -41,6 +41,7 @@ public class Assignment03 {
         }
         System.out.println("---------------------------------------");
 
+        isc.close();
     }
 }
 
