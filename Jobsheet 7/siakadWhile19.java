@@ -19,7 +19,7 @@ public class siakadWhile19 {
             }
 
             if (grade > 80 && grade <= 100) {
-                System.out.println("The Grade of the " + (i + 1) + " Student is A. Good, keep the Grade!");
+                System.out.println("The Grade of the " + (i + 1) + " Student is A.\nGood, keep the Grade!");
             } else if (grade > 73 && grade <= 80) {
                 System.out.println("The Grade of the " + (i + 1) + " Student is B+");
             } else if (grade > 65 && grade <= 73) {
