@@ -13,7 +13,7 @@ public class ProfitRecursive19 {
         System.out.print("Input Investment Period : ");
         int investPeriod = isc.nextInt();
 
-        System.out.println("Balance after " +base+ " year = " + 
+        System.out.println("Balance after " +investPeriod+ " year = " + 
                     calculateProfit(initialBalance, investPeriod));
 
         isc.close();
